@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MW2 Menu\MW2 Menu.csproj" />
+    <ProjectReference Include="..\MW2 Menu\IWMenu.csproj" />
   </ItemGroup>
 
 </Project>
