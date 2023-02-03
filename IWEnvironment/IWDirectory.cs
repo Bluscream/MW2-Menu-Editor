@@ -16,8 +16,14 @@ namespace IWEnvironment
         public List<IWFile> Files { get; set; } = new();
         public IWDirectory()
         {
+
         }
         public static IWEnvorinment FromDirectory(string path) => FromDirectory(new DirectoryInfo(path));
         public static IWEnvorinment FromDirectory(DirectoryInfo directory) => new() { Directory = directory };
+
+        public void Load()
+        {
+            SubDirectories
+        }
     }
 }
