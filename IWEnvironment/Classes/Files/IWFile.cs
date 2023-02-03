@@ -8,5 +8,11 @@ namespace IWEnvironment.Classes.Files
 {
     public class IWFile
     {
+        public IWDirectory? Root { get; set; }
+        public FileInfo File { get; set; }
+        public override string ToString()
+        {
+            return File.FullName;
+        }
     }
 }

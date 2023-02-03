@@ -12,7 +12,7 @@ namespace IWEnvironment
 
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
-                    return FromDirectory(fbd.SelectedPath);
+                    return FromDirectory(fbd.SelectedPath) as IWEnvorinment;
                 }
                 else if (result == DialogResult.Cancel) return null;
             }

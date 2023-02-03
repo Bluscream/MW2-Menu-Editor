@@ -4,7 +4,7 @@ namespace MW2_Menu_Editor
 {
     public partial class Editor : Form
     {
-        Menu CurrentMenu { get; set; }
+        IWMenu CurrentMenu { get; set; }
         public Editor()
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace MW2_Menu_Editor
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 var file = new FileInfo(openFileDialog1.FileName);
-                CurrentMenu = Menu.FromFile(file);
+                CurrentMenu = IWMenu.FromFile(file);
                 Console.WriteLine(CurrentMenu.ToString());
             }
         }
